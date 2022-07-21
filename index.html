@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Membuat Form Validasi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="background">
+		<center><h2>:---- FillExE ----:</h2></center>
+		<center><h6>(Fill with Extra Ehehehehe)</h6></center>
+		<div class="box">
+			<form action="log.php" method="POST" onSubmit="validasi()">
+				<div>
+					<label><ion-icon name="water-outline"></ion-icon> Jenis Bahan Bakar :</label>
+					<input type="text"  name="nama" id="nama">
+				</div>
+				<div>
+					<label><ion-icon name="card-outline"></ion-icon> Nilai Bensin (Rp.) :</label>
+					<input type="number" name="biaya" id="biaya">
+				</div>
+				<div>
+					<input type="submit" name="submit"	value="Proses" class="tombol">
+					<input type="submit" value="Batal" class="tombol">
+				</div>
+			</form>
+		</div>
+
+		<div class="box">
+			<label class="tombol"><ion-icon name="trending-up-outline"></ion-icon><a href="log.php"> Log Transaksi </a></label>
+		</div>
+	</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script src="validasi.js"></script>
+</html>
